@@ -19,7 +19,7 @@ def press(button):
         fname = app.getEntry("first name")
         lname = app.getEntry("last name")
         date = app.getEntry("last name")
-
+        print(fname)
     if button=="Submit":
         print(main.start())
 

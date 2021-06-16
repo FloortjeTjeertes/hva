@@ -10,21 +10,6 @@ class Main:
     Lname=str()
     Date=int()
 
-    while Fname=="":
-        Fname=input("wat is uw voornaam?: ")
-    
-    while Lname=="":
-        Lname=input("wat is uw achternaam?: ")
-
-    while isinstance(Date, int)==False or int(Date) <= 0 or  int(Date) >= dt.year:
-        temp=input("wat is uw geboorte jaar?: ")
-        try:
-         Date=int(temp)
-        except:
-         print('datum is niet valide')
-
-
-
 
     age =Main.calc(int(Date))[0]
     SpaceAge=Main.calc(int(Date))[1]
