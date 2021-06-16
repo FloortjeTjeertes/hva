@@ -1,5 +1,13 @@
 import datetime
 
+from appJar import gui
+app = gui()
+app.addLabel("title", "space age")
+app.setLabelBg("title", "#5BCEFA")
+app.addLabelEntry("first name")
+app.addLabelEntry("last name")
+app.go()
+
 class Main:
    def start():
     print("hello")
