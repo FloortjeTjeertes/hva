@@ -16,12 +16,12 @@ def press(button):
     main = Florian_Tjeertes_main.Main
     if button == "Cancel":
         app.stop()
-     
-    if button=="Submit":
+    else:
+     if button=="Submit":
         fname = app.getEntry("first name")
         lname = app.getEntry("last name")
         date = app.getEntry("year")
-    if(fname!="" or lname!="" or int(date)!=0):
+     if(fname!="" or lname!="" or int(date)!=0):
         print(main.start(fname,lname,date))
         app.setMessage("message",main.start(fname,lname,date))        
 
